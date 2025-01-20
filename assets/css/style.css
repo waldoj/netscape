@@ -1,0 +1,226 @@
+body {
+    background-color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+    a.blog-name {
+        color: black;
+        text-decoration: none;
+    }
+
+p, ul, ol {
+    line-height: 1.5;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    th, td {
+        padding: 5px;
+        text-align: left;
+    }
+
+/* Begin Images */
+p img {
+	padding: 0;
+	max-width: 100%;
+    height: auto;
+}
+.featured-image img {
+    max-width: 100%;
+    height: auto;
+}
+img.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}				
+img.alignright {
+    margin: 0 0 2px 7px;
+    display: inline;
+}			
+img.alignleft {
+    margin: 0 7px 2px 0;
+    display: inline;
+}			
+.alignright {
+    float: right;
+}				
+.alignleft {
+    float: left
+}
+
+.imgright {
+    float: right;
+    width: 50%;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+    .imgright dt, .imgleft dt {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .imgright dd, .imgleft dd {
+        text-align: center;
+        font-style: italic;
+        margin: 0;
+    }
+
+.imgleft {
+    float: left;
+    width: 50%;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.wp-caption {
+    margin: 1em;
+    max-width: 100%;
+}
+
+body > .container {
+    max-width: 35em;
+    margin: 0 auto;
+}
+
+#comments {
+    margin-top: 5em;
+}
+
+/* Menu styling */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+    .menu ul {
+        padding-left: 0;
+    }
+
+    .menu li {
+        display: inline;
+        margin-right: 0.25em;
+    }
+
+        .menu li::after {
+            content: "|";
+            margin-left: 0.25em;
+        }
+
+        .menu li:last-child::after {
+            content: "";
+        }
+
+.search-form {
+    margin-top: 10px;
+    text-align: right;
+}
+        
+    .search-form input[type="search"] {
+        padding: 5px;
+        font-size: 16px;
+    }
+        
+/* Styles specific to Waldo.Net  */
+.shortlink {
+	margin-bottom: 2em;
+	font-weight: bold;
+	line-height: 12px;
+}
+
+div.linklog {
+	background: #097bc3;
+	border: 1px #333 solid;
+	padding: 5px 5px 2px 5px;
+	margin: 15px;	
+}
+
+    ul.linklog {
+        margin-top: -.1em;
+        margin-bottom: .15em;
+    }
+
+        ul.linklog li {
+            margin-left: -2em;
+        }
+
+            ul.linklog li a {
+                text-decoration: none;
+                color: #000;
+            }
+
+            .credit {
+                background: transparent;
+                font-size: 11px;
+                margin-top: 10px;
+                margin-left: 255px;
+                margin-right: 0;
+                margin-bottom: 0;
+                padding: 3px;
+            }
+            
+            .credit a:link, .credit a:hover {
+                color: #000;
+            }
+
+div.section-break {
+    text-align: center;
+}
+div.infobox {
+    width: 200px;
+    float: right;
+    border: 1px solid #000;
+    margin: .25em 0 .25em .5em;
+    padding: .5em;
+    background-color: #eee;
+}
+    div.infobox dt
+    {
+        font-weight: bold;
+        clear: left;
+    }
+    div.infobox dd
+    {
+        margin-left: 1.5em;
+    }
+a.stealth {
+    color: #333;
+    text-decoration: none;
+}
+a.stealth:hover {
+    color: #336;
+}
+
+div.footnotes {
+    font-size: .85em;
+}
+sup {
+                font-size: .75em;
+            }
