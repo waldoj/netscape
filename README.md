@@ -11,13 +11,10 @@ This is a simple WordPress theme designed to reflect the aesthetic of mid-1990s 
 ## Usage
 This theme includes a basic page template for blog entries. You can create new blog posts using the WordPress editor, and they will be displayed with the specified styles.
 
-## Files Included
+## Notable Files Included
 - `assets/css/style.css`: Contains the CSS styles for the theme.
-- `assets/js/script.js`: Intended for JavaScript functionality (currently empty).
-- `templates/page-blog.php`: Basic page template for blog entries.
-- `functions.php`: Defines theme functions and features.
 - `index.php`: Main template file for the theme.
-- `style.css`: Theme header information and additional styles.
+- `single.php`: Template file for individual entries.
 
 ## License
 This theme is licensed under the MIT License.
