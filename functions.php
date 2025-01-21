@@ -6,4 +6,13 @@ function my_wordpress_theme_enqueue_styles() {
 }
 
 add_action('wp_enqueue_scripts', 'my_wordpress_theme_enqueue_styles');
+
+add_action('after_setup_theme', function() {
+    // Enable featured images
+    add_theme_support('post-thumbnails');
+    
+    // Add custom image sizes if needed
+    add_image_size('featured-large', 1200, 800, true);
+    add_image_size('featured-medium', 800, 600, true);
+});
 ?>

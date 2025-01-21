@@ -41,9 +41,20 @@ p img {
 	max-width: 100%;
     height: auto;
 }
-.featured-image img {
-    max-width: 100%;
-    height: auto;
+.featured-image {
+    margin: 2em 0;
+    width: 100%;
+}
+    .featured-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+.featured-image-caption {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-top: 0.5em;
 }
 img.centered {
     display: block;

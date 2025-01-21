@@ -36,7 +36,12 @@
                 </div>
                 <?php if ( has_post_thumbnail() ) : ?>
                     <div class="featured-image">
-                        <?php the_post_thumbnail('large'); ?>
+                        <?php the_post_thumbnail('featured-large'); ?>
+                        <?php if ( get_the_post_thumbnail_caption() ) : ?>
+                            <figcaption class="featured-image-caption">
+                                <?php echo get_the_post_thumbnail_caption(); ?>
+                            </figcaption>
+                        <?php endif; ?>
                     </div>
                 <?php endif; ?>
                 <div class="content">
