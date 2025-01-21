@@ -101,6 +101,8 @@ img.alignleft {
 .wp-caption {
     margin: 1em;
     max-width: 100%;
+    font-style: italic;
+    font-size: .9em;
 }
 
 body > .container {
