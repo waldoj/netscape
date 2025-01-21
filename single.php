@@ -12,6 +12,15 @@
         <?php $thumbnail_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' ); ?>
         <meta name="twitter:image" content="<?php echo $thumbnail_url[0]; ?>">
     <?php endif; ?>
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="<?php the_title(); ?>">
+    <meta property="og:description" content="<?php echo get_the_excerpt(); ?>">
+    <meta property="og:url" content="<?php the_permalink(); ?>">
+    <?php if ( has_post_thumbnail() ) : ?>
+        <?php $thumbnail_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' ); ?>
+        <meta property="og:image" content="<?php echo $thumbnail_url[0]; ?>">
+    <?php endif; ?>
+    <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
