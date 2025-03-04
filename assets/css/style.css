@@ -21,10 +21,6 @@ p, ul, ol {
     line-height: 1.5;
 }
 
-.post, .page {
-    font-size: 1.25em;
-}
-
 table {
     border-collapse: collapse;
     width: 100%;
@@ -120,9 +116,10 @@ img.alignleft {
     font-size: .9em;
 }
 
-body > .container {
+body .container {
     max-width: 35em;
     margin: 0 auto;
+    font-size: 1.25em;
 }
 
 #comments {
