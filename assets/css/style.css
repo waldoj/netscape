@@ -121,6 +121,11 @@ body .container {
     margin: 0 auto;
     font-size: 1.25em;
 }
+.pagination {
+    max-width: 35em;
+    margin: 0 auto;
+    font-size: 1.25em;
+}
 
 #comments {
     margin-top: 5em;
