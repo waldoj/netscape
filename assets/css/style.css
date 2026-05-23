@@ -157,61 +157,58 @@ body .container {
             content: "";
         }
 
+/* Search form */
 .search-form {
     margin-top: 10px;
     text-align: right;
 }
-        
     .search-form input[type="search"] {
         padding: 5px;
         font-size: 16px;
     }
-        
+
+
+
+
+
+
 /* Styles specific to Waldo.Net  */
-.shortlink {
-	margin-bottom: 2em;
-	font-weight: bold;
-	line-height: 12px;
+.category-shortlinks {
+    background-color: #ffffcc;
+    border: 2px solid #666;
+    padding: .5em .75em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
 }
 
-div.linklog {
-	background: #097bc3;
-	border: 1px #333 solid;
-	padding: 5px 5px 2px 5px;
-	margin: 15px;	
-}
-
-    ul.linklog {
-        margin-top: -.1em;
-        margin-bottom: .15em;
+    .category-shortlinks h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        margin: 0 0 .25em 0;
     }
 
-        ul.linklog li {
-            margin-left: -2em;
+        .category-shortlinks h2::before {
+            content: "▶ ";
         }
 
-            ul.linklog li a {
-                text-decoration: none;
-                color: #000;
-            }
+    .category-shortlinks .post-meta {
+        font-size: .85em;
+        color: #444;
+    }
 
-            .credit {
-                background: transparent;
-                font-size: 11px;
-                margin-top: 10px;
-                margin-left: 255px;
-                margin-right: 0;
-                margin-bottom: 0;
-                padding: 3px;
-            }
-            
-            .credit a:link, .credit a:hover {
-                color: #000;
-            }
+    .category-shortlinks .featured-image {
+        display: none;
+    }
+
+    .category-shortlinks .content {
+        margin-top: .25em;
+    }
 
 div.section-break {
     text-align: center;
 }
+
+/* This was only ever used on "Indigent dental care in Virginia" */
 div.infobox {
     width: 200px;
     float: right;
