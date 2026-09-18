@@ -1,0 +1,30 @@
+/**
+ * Last.fm Recently Played — default styling.
+ *
+ * Deliberately minimal and structural only: just enough to keep the label,
+ * album art, and song on one line and vertically aligned. Font, size, colour,
+ * and weight are all left to inherit from the surrounding theme, so the widget
+ * reads like the text around it.
+ *
+ * Layout that's yours to decide — centring the widget, margins, spacing from
+ * neighbouring elements — is intentionally left out. Add it in your own theme
+ * stylesheet, targeting these classes:
+ *
+ *   .lastfm-now-playing   the wrapper around the whole widget
+ *   .lastfm-label         the "Now playing:" / "Last played … ago:" text
+ *   .lastfm-art           the album-art thumbnail
+ *   .lastfm-song          the "Song by Artist" text
+ */
+
+.lastfm-now-playing {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4em;
+}
+
+.lastfm-now-playing .lastfm-art {
+	flex: none;
+	border: 0;
+	width: 60px;
+	height: 60px;
+}

@@ -24,4 +24,16 @@ add_action('after_setup_theme', function() {
     // Add title tag support
     add_theme_support('title-tag');
 });
+
+add_action( 'widgets_init', function() {
+    register_sidebar( array(
+        'name'          => 'Sidebar',
+        'id'            => 'sidebar-1',
+        'description'   => 'Appears as a beveled panel beside your content (and below it on narrow screens).',
+        'before_widget' => '<div class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );
+});
 ?>

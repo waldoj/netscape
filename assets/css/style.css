@@ -2,6 +2,7 @@ body {
     background-color: #fff;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
+    margin: 0.5em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -160,6 +161,7 @@ body .container {
 /* Search form */
 .search-form {
     margin-top: 10px;
+    margin-bottom: 10px;
     text-align: right;
 }
     .search-form input[type="search"] {
@@ -241,3 +243,96 @@ div.footnotes {
 sup {
     font-size: .75em;
 }
+
+.lastfm-now-playing {
+    font-size: .9em;
+}
+
+/* Begin Sidebar */
+
+/* Two-column layout: content column beside the sidebar, centered as a group. */
+.content-area {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+    .main-column {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+/* Align the masthead and footer with the wider content area. */
+body header .container,
+body footer .container {
+    max-width: 1000px;
+}
+
+/* Sidebar styled as an early-Netscape HTML table with a beveled effect. */
+aside.sidebar {
+    flex: 0 0 260px;
+    align-self: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .95em;
+}
+    aside.sidebar .widget {
+        margin-bottom: 1.25em;
+        background-color: #c0c0c0;      /* classic silver panel */
+        border: 2px ridge #c0c0c0;      /* raised, table-style bevel */
+    }
+        aside.sidebar .widget:last-child {
+            margin-bottom: 0;
+        }
+    aside.sidebar .widget-title {
+        margin: 0;
+        padding: .35em .6em;
+        border-bottom: 2px groove #c0c0c0;  /* beveled header-cell rule */
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+        color: #000;
+    }
+    aside.sidebar .widget ul,
+    aside.sidebar .widget ol {
+        list-style: none;
+        margin: 0;
+        padding: .5em .75em;
+        line-height: 1.4;
+    }
+    aside.sidebar .widget li {
+        padding: .15em 0;
+    }
+    aside.sidebar .widget > p {
+        margin: 0;
+        padding: .5em .75em;
+    }
+    aside.sidebar a {
+        color: #000080;                 /* classic Netscape navy */
+    }
+    aside.sidebar a:hover {
+        color: #0000ff;
+    }
+
+/* Stack the sidebar beneath the content (and pagination) on narrower screens. */
+@media (max-width: 70em) {
+    .content-area {
+        flex-direction: column;
+        max-width: none;
+    }
+    .main-column {
+        width: 100%;
+    }
+    aside.sidebar {
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 35em;
+        margin: 0 auto;
+        font-size: 1.25em;
+    }
+    body header .container,
+    body footer .container {
+        max-width: 35em;
+    }
+}
+/* End Sidebar */

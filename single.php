@@ -26,6 +26,8 @@
 
     <?php get_header(); ?>
 
+    <div class="content-area">
+    <div class="main-column">
     <div class="container">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="single-post">
@@ -54,6 +56,9 @@
     <div class="last-modified">
         <p>Last modified: <?php the_modified_date(); ?></p>
     </div>
+    </div><!-- .main-column -->
+    <?php get_sidebar(); ?>
+    </div><!-- .content-area -->
 
 <?php get_footer(); ?>
     

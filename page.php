@@ -11,6 +11,8 @@
 
     <?php get_header(); ?>
 
+    <div class="content-area">
+    <div class="main-column">
     <div class="container">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="page">
@@ -21,6 +23,9 @@
             </div>
         <?php endwhile; endif; ?>
     </div>
+    </div><!-- .main-column -->
+    <?php get_sidebar(); ?>
+    </div><!-- .content-area -->
 
     <?php get_footer(); ?>
     

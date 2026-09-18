@@ -10,6 +10,8 @@
 
     <?php get_header(); ?>
 
+    <div class="content-area">
+    <div class="main-column">
     <div class="container">
         <?php if ( have_posts() ) : ?>
             <?php while ( have_posts() ) : the_post(); ?>
@@ -41,6 +43,9 @@
         ) );
         ?>
     </div>
+    </div><!-- .main-column -->
+    <?php get_sidebar(); ?>
+    </div><!-- .content-area -->
 
     <?php get_footer(); ?>
 </body>

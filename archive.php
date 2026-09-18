@@ -10,6 +10,8 @@
 
     <?php get_header(); ?>
 
+    <div class="content-area">
+    <div class="main-column">
     <div class="container">
         <h1><?php the_archive_title(); ?></h1>
         <?php if ( have_posts() ) : ?>
@@ -23,6 +25,9 @@
             <p><?php _e( 'Sorry, no posts matched your criteria.', 'textdomain' ); ?></p>
         <?php endif; ?>
     </div>
+    </div><!-- .main-column -->
+    <?php get_sidebar(); ?>
+    </div><!-- .content-area -->
 
     <?php get_footer(); ?>
     
